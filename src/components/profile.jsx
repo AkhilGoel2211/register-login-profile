@@ -10,15 +10,14 @@ const Profile = () => {
   const dispatch = useDispatch();
 
   const {user: currentUser} = useSelector((state) => state.auth);
+
   if(!currentUser) {
     return navigate("/login");
   }
 
   const handleLogout = () => {
-    dispatch(logout())
-      .then(() => {
-        navigate("/login");
-      });
+    navigate("/login");
+    dispatch(logout());
   };
 
   return (
