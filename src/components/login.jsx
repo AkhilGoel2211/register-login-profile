@@ -68,10 +68,11 @@ const Login = (props) => {
         <center
           style={{
             padding: "20px",
-            margin: "30px 200px",
+            margin: "10% 30%",
             border: "1px solid gray",
             background: "#F5F5F5",
             height: "500px",
+            width: "400px",
           }}
         >
           <h1>Login</h1>
