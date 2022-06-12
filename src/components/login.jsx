@@ -30,17 +30,18 @@ const Login = (props) => {
     setPassword(password);
   };
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
-    dispatch(login(username, password))
+    await dispatch(login(username, password))
       .then(() => {
-        navigate("/profile");
+        // navigate("/profile");
         // window.location.reload();
       })
       .catch(() => {
         setLoading(false);
       });
+    navigate("/profile");
   };
 
   // const handleLogin = (e) => {
