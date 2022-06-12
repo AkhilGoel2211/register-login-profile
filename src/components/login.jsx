@@ -35,13 +35,12 @@ const Login = (props) => {
     setLoading(true);
     await dispatch(login(username, password))
       .then(() => {
-        // navigate("/profile");
+        navigate("/profile");
         // window.location.reload();
       })
       .catch(() => {
         setLoading(false);
       });
-    navigate("/profile");
   };
 
   // const handleLogin = (e) => {
