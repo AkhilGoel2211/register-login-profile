@@ -13,23 +13,23 @@ const Profile = () => {
   const {user: currentUser} = useSelector((state) => state.auth);
   const [content, setContent] = useState("");
 
-  useEffect(() => {
-    userInfo().then(
-      (response) => {
-        console.log(response.data);
-        setContent(response.data);
-      },
-      (error) => {
-        const _content =
-          (error.response &&
-            error.response.data &&
-            error.response.data.message) ||
-          error.message ||
-          error.toString();
-        setContent(_content);
-      }
-    );
-  }, []);
+  // useEffect(() => {
+  //   userInfo().then(
+  //     (response) => {
+  //       console.log(response.data);
+  //       setContent(response.data);
+  //     },
+  //     (error) => {
+  //       const _content =
+  //         (error.response &&
+  //           error.response.data &&
+  //           error.response.data.message) ||
+  //         error.message ||
+  //         error.toString();
+  //       setContent(_content);
+  //     }
+  //   );
+  // }, []);
 
   console.log(content);
 

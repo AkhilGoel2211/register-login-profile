@@ -15,9 +15,9 @@ const App = () => {
   return (
     <React.Fragment>
       <Routes>
-        <Route path="/register-login-profile/login" element={<StartPage />}></Route>
-        <Route path="/register-login-profile/profile" element={<Profile />}></Route>
-        <Route path="/register-login-profile/" element={<StartPage />}></Route>
+        <Route path="/login" element={<StartPage />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/" element={<StartPage />}></Route>
         <Route path="/register-login-profile" element={<StartPage />}></Route>
       </Routes>
     </React.Fragment>
