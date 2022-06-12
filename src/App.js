@@ -1,6 +1,6 @@
 import React from "react";
-import {Route, Routes, useNavigate} from "react-router-dom";
-import {useSelector} from "react-redux";
+import {Route, Routes} from "react-router-dom";
+// import {useSelector} from "react-redux";
 
 import "./App.css";
 
@@ -8,11 +8,10 @@ import StartPage from './components/startPage';
 import Profile from "./components/profile";
 import NotFound from './components/notFound';
 
-import {clearMessage} from "./actions/message";
+// import {clearMessage} from "./actions/message";
 
 const App = () => {
-  const navigate = useNavigate();
-  const {user: currentUser} = useSelector((state) => state.auth);
+  // const {user: currentUser} = useSelector((state) => state.auth);
 
   return (
     <React.Fragment>

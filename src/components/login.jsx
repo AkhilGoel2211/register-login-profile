@@ -60,7 +60,7 @@ const Login = (props) => {
   //   }
   // };
 
-  // if(isLoggedIn) navigate("/profile");
+  if(isLoggedIn) navigate("/profile");
 
   return (
     <form ref={form}>
