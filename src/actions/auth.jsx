@@ -40,10 +40,10 @@ export const register = (name, username, email, password) => (dispatch) => {
   );
 };
 
-export const login = (username, password) => (dispatch) => {
+export const login = async (username, password) => (dispatch) => {
   return AuthService.login(username, password).then(
-    (data) => {
-      dispatch({
+    async (data) => {
+      await dispatch({
         type: LOGIN_SUCCESS,
         payload: {user: data},
       });
