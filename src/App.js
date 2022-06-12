@@ -6,7 +6,6 @@ import "./App.css";
 
 import StartPage from './components/startPage';
 import Profile from "./components/profile";
-import NotFound from './components/notFound';
 
 // import {clearMessage} from "./actions/message";
 
@@ -18,8 +17,8 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<StartPage />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
-        <Route path="/not-found" element={<NotFound />}></Route>
         <Route path="/" element={<StartPage />}></Route>
+        <Route path="/register-login-profile" element={<StartPage />}></Route>
       </Routes>
     </React.Fragment>
   );
