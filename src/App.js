@@ -16,7 +16,7 @@ const App = () => {
     <React.Fragment>
       <Routes>
         <Route path="/login" element={<StartPage />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/gh-pages-url/profile" element={<Profile />}></Route>
         <Route path="/" element={<StartPage />}></Route>
         <Route path="/register-login-profile" element={<StartPage />}></Route>
       </Routes>
