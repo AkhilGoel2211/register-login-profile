@@ -7,8 +7,6 @@ import "./App.css";
 import StartPage from "./components/startPage";
 import Profile from "./components/profile";
 
-// import {clearMessage} from "./actions/message";
-
 const App = () => {
   // const {user: currentUser} = useSelector((state) => state.auth);
 
