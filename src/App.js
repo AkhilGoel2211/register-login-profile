@@ -4,7 +4,7 @@ import {Route, Routes} from "react-router-dom";
 
 import "./App.css";
 
-import StartPage from './components/startPage';
+import StartPage from "./components/startPage";
 import Profile from "./components/profile";
 
 // import {clearMessage} from "./actions/message";
@@ -14,6 +14,7 @@ const App = () => {
 
   return (
     <React.Fragment>
+      {/* <Routes basename="/register-login-profile"> */}
       <Routes>
         <Route path="/login" element={<StartPage />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
