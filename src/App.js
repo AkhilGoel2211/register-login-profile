@@ -16,10 +16,22 @@ const App = () => {
     <React.Fragment>
       {/* <Routes basename="/register-login-profile"> */}
       <Routes>
-        <Route path="/login" element={<StartPage />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
-        <Route path="/" element={<StartPage />}></Route>
-        <Route path="/register-login-profile" element={<StartPage />}></Route>
+        <Route
+          path={process.env.PUBLIC_URL + "/login"}
+          element={<StartPage />}
+        ></Route>
+        <Route
+          path={process.env.PUBLIC_URL + "/profile"}
+          element={<Profile />}
+        ></Route>
+        <Route
+          path={process.env.PUBLIC_URL + "/"}
+          element={<StartPage />}
+        ></Route>
+        <Route
+          path={process.env.PUBLIC_URL + "/register-login-profile"}
+          element={<StartPage />}
+        ></Route>
       </Routes>
     </React.Fragment>
   );
